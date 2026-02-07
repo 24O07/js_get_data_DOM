@@ -1,0 +1,2 @@
+"use strict";var populationElements=document.querySelectorAll("span.population"),populations=Array.from(populationElements).map(function(t){return Number(t.textContent.replace(/,/g,""))}),total=populations.reduce(function(t,e){return t+e},0),average=total/populations.length;document.querySelector("span.average-population").textContent=Math.round(average).toLocaleString(),document.querySelector("span.total-population").textContent=total.toLocaleString();
+//# sourceMappingURL=js_get_data_DOM.069347f5.js.map
